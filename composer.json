@@ -1,6 +1,6 @@
 {
     "name": "zemlecht/localization-container",
-    "description": "An Apiato container which adds localization functionality.",
+    "description": "An Apiato container which adds localization functionality speciality for zemlecht.",
     "type": "apiato-container",
     "license": "MIT",
     "require": {
