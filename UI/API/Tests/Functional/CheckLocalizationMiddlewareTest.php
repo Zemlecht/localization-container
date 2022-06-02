@@ -19,18 +19,6 @@ class CheckLocalizationMiddlewareTest extends ApiTestCase
         'roles' => '',
     ];
 
-    public function testIfMiddlewareSetsDefaultAppLanguage(): void
-    {
-        $data = [];
-        $requestHeaders = [];
-        $defaultLanguage = config('app.locale');
-
-        $response = $this->makeCall($data, $requestHeaders);
-
-        $response->assertStatus(200)
-            ->assertHeader('content-language', $defaultLanguage);
-    }
-
     public function testIfMiddlewareSetsCustomLanguage(): void
     {
         $language = 'fr';
